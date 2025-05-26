@@ -1,137 +1,74 @@
+*{
+  box-sizing:border-box; 
+  margin: 0%;
+  padding:0%;
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0%;
     padding: 0%;
-  }
+}
 
- *{
-  box-sizing:border-box; 
-  margin: 0%;
-  padding:0%;
- }
+.row{
+    width: 100%;
+    align-self: center;
+}
 
 h1{
   text-align: center;
-  color: rgb(23, 23, 112);
+  color: rgb(0, 0, 0);
+  top:30px;
 }
-
- .row{
-    width: 100%;
-  }
 
 #cont{
  position: relative;
- top:40px;
  margin:15px;
 }
 
-.container #sez1 h3{
-    background-color: aquamarine;
+#sez1 h3, #sez2 h3, #sez3 h3{
+    background-color: rgb(56, 245, 182);
     border: solid 1px black;
     width:80px;
     float: right;
     position: relative;
-    padding: 4px;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
     margin: 0%;
 }
 
-.container #sez2 h3{
-  background-color: rgb(58, 71, 207);
-  border: solid 1px black;
-  width:80px;
-  float: right;
-  position: relative;
-  padding: 4px;
-  margin: 0%;
-  }
-
-.container #sez3 h3{
-  background-color: rgb(42, 97, 148);
-  border: solid 1px black;
-  width:80px;
-  float: right;
-  position: relative;
-  padding: 4px;
-  margin: 0%;
-  }
-
-.container #sez1 p{
-  padding-top: 15px;
+#sez1 p, #sez2 p, #sez3 p {
+  padding-top: 25px;
   padding-bottom: 0px;
   padding-left: 5px;
   padding-right: 5px;
-  margin: 4px;
-  background-color: rgb(19, 200, 241);
+  margin: 5px;
+  background-color: rgb(182, 184, 185);
   border: solid 1px black;
 
 }
 
-.container #sez2 p{
-  padding-top: 15px;
-  padding-bottom: 0px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 4px;
-  background-color: rgb(11, 165, 199);
-  border: solid 1px black;
+@media (max-width: 767px){
+   .container #sez1, #sez2, #sez3{
+    float: left;
+    width:100%;
   }
-
-.container #sez3 p{
-  padding-top: 15px;
-  padding-bottom: 0px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 4px;
-  background-color: rgb(21, 80, 93);
-  border: solid 1px black;
 }
-
-@media (min-width: 992px){
-  .container #sez1 {
-    float:left; 
-  }
-   .container #sez1 {
-    width:33%;
-}
-
-   .container #sez2 {
-    float:left; 
-    }
-   .container #sez2 {
-    width:33%;
-}
-
-   .container #sez3 {
-    float:left;
-    }
-   .container #sez3{ 
-    width:33%;
-}}
 
 @media (min-width: 768px) and (max-width: 991px){
-  .container #sez1{
+   #sez1, #sez2 {
     float:left;
-    width:50%;
-    }
-  .container #sez2{
-      float:left;
-      width: 50%;
-    }
+    width: 50%;
+  }
   .container #sez3{
     float: left;
     width: 100%;
-    }}
+    }
+}
 
-@media (max-width: 767px){
-   .container #sez1{
-    float: left;
-    width:100%;
-}
-   .container #sez2{
-    float: left;
-    width:100%;
-}
-   .container #sez3{
-    float: left;
-    width:100%;
+@media (min-width: 992px){
+  .container #sez1, #sez2, #sez3 {
+    float:left; 
+    width:33%;
 }}
